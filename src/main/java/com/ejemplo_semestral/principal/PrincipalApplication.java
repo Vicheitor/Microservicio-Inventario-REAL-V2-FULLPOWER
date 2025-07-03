@@ -8,13 +8,7 @@ import io.github.cdimascio.dotenv.Dotenv;
 @SpringBootApplication
 public class PrincipalApplication {
     public static void main(String[] args) {
-
-        Dotenv dotenv = Dotenv.load();
-        dotenv.entries().forEach(entry ->
-            System.setProperty(entry.getKey(), entry.getValue())
-        );
         SpringApplication.run(PrincipalApplication.class, args);
     }
 }
 
-//PROFE ESTOY CHATO PAPITO como 5 horas pa conectar y aun asi no se cual es el error//
